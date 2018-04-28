@@ -58,35 +58,35 @@ namespace _20180302_EXAMEN02_020159 {
 
         public void cook() {
             Console.WriteLine(robotClass + " robot " + id + " is now cooking. " + DateTime.Now);
-            bool finished = work(3000);
+            bool finished = work(3000 / this.taskCapacity);
             Console.WriteLine(robotClass + " robot " + id + " has finished cooking. " + DateTime.Now);
             onFinish();
         }
 
         public void paint() {
             Console.WriteLine(robotClass + " robot " + id + " is now painting. " + DateTime.Now);
-            bool finished = work(2000);
+            bool finished = work(2000 / this.taskCapacity);
             Console.WriteLine(robotClass + " robot " + id + " has finished painting. " + DateTime.Now);
             onFinish();
         }
 
         public void repair() {
             Console.WriteLine(robotClass + " robot " + id + " is now repairing. " + DateTime.Now);
-            bool finished = work(4000);
+            bool finished = work(4000 / this.taskCapacity);
             Console.WriteLine(robotClass + " robot " + id + " has finished repairing. " + DateTime.Now);
             onFinish();
         }
 
         public void rescue() {
             Console.WriteLine(robotClass + " robot " + id + " is now rescuing kitties." + DateTime.Now);
-            bool finished = work(5000);
+            bool finished = work(5000 / this.taskCapacity);
             Console.WriteLine(robotClass + " robot " + id + " has finished rescuing kitties. " + DateTime.Now);
             onFinish();
         }
 
         public void fight() {
             Console.WriteLine(robotClass + " robot " + id + " is now fighting." + DateTime.Now);
-            bool finished = work(6000);
+            bool finished = work(6000 / this.taskCapacity);
             Console.WriteLine(robotClass + " robot " + id + " has finished fighting. " + DateTime.Now);
             onFinish();
         }

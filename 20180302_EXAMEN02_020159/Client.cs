@@ -39,6 +39,7 @@ namespace _20180302_EXAMEN02_020159 {
                     invokerIndex++;
                 }
             }
+            Console.WriteLine("All tasks have been assigned.");
         }
 
         public void undoAction() {
